@@ -1,0 +1,31 @@
+# 构建输出目录
+/build/
+/build-*/
+/cmake-build-*/
+
+# 在源码目录运行 CMake 产生的文件
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/install_manifest.txt
+/Makefile
+/build.ninja
+/rules.ninja
+/.ninja_deps
+/.ninja_log
+/compile_commands.json
+
+# 本机 CMake 配置
+/CMakeUserPresets.json
+
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+
+# 系统生成的文件
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# third_party 中的头文件和预编译库、.vscode 配置保留提交

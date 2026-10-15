@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "WSL Ubuntu",
+            "compilerPath": "/usr/bin/g++",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${env:HOME}/webrtc-checkout/src",
+                "${env:HOME}/webrtc-checkout/src/third_party/abseil-cpp",
+                "${env:HOME}/webrtc-checkout/src/third_party/libyuv/include",
+                "${workspaceFolder}/third_party/libhv/include",
+                "${workspaceFolder}/third_party/json/include",
+                "/usr/include/SDL2"
+            ],
+            "defines": [
+                "WEBRTC_POSIX",
+                "WEBRTC_LINUX",
+                "NDEBUG"
+            ]
+        }
+    ],
+    "version": 4
+}
